@@ -5,21 +5,28 @@ const inc_bt = document.querySelector(".inc_bt");
 
 let number = 0;
 
-function setCounterNumber() {
-  countNumber.innerHTML = `${number}`;
+function changeColor() {
+  if (number < 0) {
+    countNumber.style.color = "red";
+  } else if (number === 0) {
+    countNumber.style.color = "black";
+  } else {
+    countNumber.style.color = "green";
+  }
 }
 
-dec_bt.addEventListener("click", function () {
-  number -= 1;
-  setCounterNumber();
-});
-reset_bt.addEventListener("click", function () {
-  number = 0;
-  setCounterNumber();
-});
-inc_bt.addEventListener("click", function () {
-  number += 1;
-  setCounterNumber();
-});
+function setCounterNumber(num) {
+  if (num !== 0) {
+    number = number + num;
+    countNumber.innerHTML = number;
+    changeColor();
+  } else {
+    number = 0;
+    countNumber.innerHTML = number;
+    changeColor();
+  }
+}
 
-setCounterNumber();
+dec_bt.addEventListener("click", () => setCounterNumber(-1));
+reset_bt.addEventListener("click", () => setCounterNumber(0));
+inc_bt.addEventListener("click", () => setCounterNumber(1));
