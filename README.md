@@ -41,6 +41,18 @@ inc_bt.addEventListener("click", function () {
 ```
 이 코드에서 중복되는 function을 떼어내려고했는데 addEventListener("click", 함수) <- 여기 함수부분에 매개변수를 넣을 수 없어서 리팩토링이 안되어 불편했는데 chatGPT한테 물어보니 화살표함수로 해결이 가능했다.
 ```
+function setCounterNumber(num) {
+  if (num !== 0) {
+    number = number + num;
+    countNumber.innerHTML = number;
+    changeColor();
+  } else {
+    number = 0;
+    countNumber.innerHTML = number;
+    changeColor();
+  }
+}
+
 dec_bt.addEventListener("click", () => setCounterNumber(-1));
 reset_bt.addEventListener("click", () => setCounterNumber(0));
 inc_bt.addEventListener("click", () => setCounterNumber(1));
