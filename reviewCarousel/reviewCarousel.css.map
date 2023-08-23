@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"reviewCarousel.css"}
+{"version":3,"sources":["reviewCarousel.scss","reviewCarousel.css"],"names":[],"mappings":"AAAA;EACE,sBAAA;EACA,SAAA;EACA,UAAA;EACA,wCAAA;ACCF;;ADEA;;EAEE,YAAA;ACCF;;ADEA;EACE,kBAAA;EACA,uBAAA;ACCF;;ADEA;EACE,eAAA;EACA,aAAA;EACA,sBAAA;ACCF;ADAE;EACE,WAAA;EACA,cAAA;EACA,YAAA;EACA,yBAAA;EACA,iBAAA;ACEJ;;ADEA;EACE,UAAA;EACA,aAAA;EACA,aAAA;EACA,iBAAA;EACA,uBAAA;EACA,mCAAA;ACCF;;ADEA;EACE,YAAA;EACA,aAAA;EACA,kBAAA;EACA,4BAAA;ACCF","file":"reviewCarousel.css"}
