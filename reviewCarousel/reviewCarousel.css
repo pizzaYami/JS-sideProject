@@ -12,7 +12,7 @@ body {
 
 body {
   text-align: center;
-  background-color: azure;
+  background-color: #f1f5f8;
 }
 
 .title {
@@ -30,16 +30,67 @@ body {
 
 .container {
   width: 60%;
-  height: 400px;
+  height: 370px;
+  border-radius: 3px;
   padding: 20px;
   margin: 10px auto;
   background-color: white;
   box-shadow: 5px 5px 20px -10px gray;
 }
 
+#bookmark {
+  position: absolute;
+  left: 250px;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #58acdb;
+  color: white;
+  box-shadow: 2px 2px 5px rgb(206, 206, 206);
+}
+
 #person_img {
   width: 150px;
   height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 10px;
+  overflow: hidden;
   border-radius: 50%;
   box-shadow: 8px -5px #58acdb;
+}
+
+#author {
+  font-size: 24px;
+  letter-spacing: 5px;
+}
+
+#job {
+  color: #58acdb;
+  margin-bottom: 10px;
+}
+
+#info {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.btn {
+  background: inherit;
+  margin-bottom: 10px;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 0;
+  overflow: visible;
+  cursor: pointer;
+}
+
+.random_btn {
+  padding: 3px;
+  background-color: #e6f5fe;
+  border: 1.5px solid #58acdb;
+  border-radius: 5px;
+  cursor: pointer;
 }/*# sourceMappingURL=reviewCarousel.css.map */

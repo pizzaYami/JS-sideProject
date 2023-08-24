@@ -46,9 +46,11 @@ const img = document.getElementById("person_img");
 const author = document.getElementById("author");
 const job = document.getElementById("job");
 const info = document.getElementById("info");
+const bookmark = document.getElementById("bookmark");
 
 const leftBtn = document.querySelector(".left_btn");
 const rightBtn = document.querySelector(".right_btn");
+const randomBtn = document.querySelector(".random_btn");
 
 let currentItme = 0;
 
@@ -74,4 +76,9 @@ rightBtn.addEventListener("click", function () {
     currentItme += 1;
     showPerson(currentItme);
   }
+});
+
+randomBtn.addEventListener("click", function () {
+  let randomNumber = Math.floor(Math.random() * data.length);
+  showPerson(randomNumber);
 });
