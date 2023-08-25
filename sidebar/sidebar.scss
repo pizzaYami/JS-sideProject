@@ -3,3 +3,77 @@
   margin: 0;
   border: 0;
 }
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: aliceblue;
+}
+
+#sidebar_container {
+  width: 200px;
+  height: 100%;
+  background-color: white;
+}
+
+#sidebar_title {
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  h2 {
+    text-shadow: 3px 3px 4px gray;
+  }
+  img {
+    width: 20px;
+    height: 20px;
+    transform: rotate(360deg);
+    transition-duration: 0.5s;
+  }
+}
+
+#sidebar_menu {
+  margin-top: 20px;
+  padding: 15px;
+  height: 80%;
+}
+
+.menu {
+  margin-bottom: 20px;
+}
+
+#sns {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+}
+
+.list {
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  transform: scale(1.5);
+  transition-duration: 1.5s;
+  animation-iteration-count: 3; /*몇회 반복할것인가*/
+}
+
+@keyframes 움찔움찔 {
+  0% {
+    transform: scale(1); /* 애니메이션이 0%만큼 동작시 */
+  }
+  50% {
+    transform: scale(1.5); /* 애니메이션이 50%만큼 동작시 */
+  }
+  100% {
+    transform: scale(1); /* 애니메이션이 100%만큼 동작시 */
+  }
+}
