@@ -33,18 +33,23 @@ body {
 #sidebar_title img {
   width: 20px;
   height: 20px;
+}
+#sidebar_title img:hover {
   transform: rotate(360deg);
   transition-duration: 0.5s;
 }
 
 #sidebar_menu {
+  width: 100%;
   margin-top: 20px;
-  padding: 15px;
   height: 80%;
 }
-
-.menu {
-  margin-bottom: 20px;
+#sidebar_menu .menu {
+  cursor: pointer;
+  padding: 10px 10px;
+}
+#sidebar_menu .menu:hover {
+  background-color: rgb(205, 205, 255);
 }
 
 #sns {
@@ -53,6 +58,7 @@ body {
   justify-content: center;
 }
 #sns img {
+  cursor: pointer;
   width: 20px;
   height: 20px;
   margin-right: 10px;
@@ -60,11 +66,11 @@ body {
 
 .list {
   position: fixed;
-  right: 10px;
-  top: 10px;
-  transform: scale(1.5);
-  transition-duration: 1.5s;
-  animation-iteration-count: 3; /*몇회 반복할것인가*/
+  right: 15px;
+  top: 15px;
+  animation-name: 움찔움찔;
+  animation-duration: 2s;
+  animation-iteration-count: 10;
 }
 
 @keyframes 움찔움찔 {
@@ -76,5 +82,11 @@ body {
   }
   100% {
     transform: scale(1); /* 애니메이션이 100%만큼 동작시 */
+  }
+}
+@media all and (max-width: 500px) {
+  #sidebar_container {
+    width: 100%;
+    transition-duration: 0.5s;
   }
 }/*# sourceMappingURL=sidebar.css.map */
