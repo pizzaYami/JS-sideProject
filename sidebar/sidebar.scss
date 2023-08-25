@@ -14,10 +14,16 @@ body {
   background-color: aliceblue;
 }
 
+button {
+  cursor: pointer;
+  background-color: transparent;
+}
+
 #sidebar_container {
   width: 200px;
   height: 100%;
   background-color: white;
+  transition: all 1s;
 }
 
 #sidebar_title {
@@ -28,6 +34,7 @@ body {
   h2 {
     text-shadow: 3px 3px 4px gray;
   }
+
   img {
     width: 20px;
     height: 20px;
@@ -70,6 +77,10 @@ body {
   animation-name: 움찔움찔;
   animation-duration: 2s;
   animation-iteration-count: 10;
+}
+
+.end {
+  transform: translate(-300px);
 }
 
 @keyframes 움찔움찔 {
