@@ -73,9 +73,15 @@ button {
 }
 
 @media all and (max-width: 725px) {
-  .hidden {
-    display: none !important;
+  // sns 아이콘 사라짐
+  #sns {
+    display: none;
   }
+  // list.menu 아이콘 생김
+  .list {
+    display: block;
+  }
+  // container column으로 바꿈
   .nav_container {
     display: flex;
     flex-direction: column;
@@ -85,6 +91,7 @@ button {
       margin-bottom: 10px;
     }
   }
+  // menu column으로 바꿈
   .nav_menus {
     display: flex;
     flex-direction: column;
@@ -96,11 +103,5 @@ button {
         background-color: rgb(205, 205, 255);
       }
     }
-  }
-  #sns {
-    display: none;
-  }
-  .list {
-    display: block;
   }
 }

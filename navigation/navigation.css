@@ -73,8 +73,11 @@ button {
 }
 
 @media all and (max-width: 725px) {
-  .hidden {
-    display: none !important;
+  #sns {
+    display: none;
+  }
+  .list {
+    display: block;
   }
   .nav_container {
     display: flex;
@@ -96,11 +99,5 @@ button {
   .nav_menus div:hover {
     transform: translateX(20px);
     background-color: rgb(205, 205, 255);
-  }
-  #sns {
-    display: none;
-  }
-  .list {
-    display: block;
   }
 }/*# sourceMappingURL=navigation.css.map */
