@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-image: url("./background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+#container {
+  width: 500px;
+  height: 200px;
+  padding: 50px;
+  border-radius: 8px;
+  box-shadow: 3px 3px 10px rgb(163, 162, 162);
+  text-align: center;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+#container h1 {
+  letter-spacing: 3px;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+#container button {
+  letter-spacing: 3px;
+  font-size: 12px;
+  border-radius: 5px;
+  border: 2px solid #55addc;
+  padding: 6px;
+  cursor: pointer;
+  background-color: #55addc;
+  color: white;
+}
+#container button:hover {
+  background-color: white;
+  color: #55addc;
+}
+
+.modal {
+  z-index: 999;
+  width: 500px;
+  height: 180px;
+  border-radius: 5px;
+  background-color: white;
+  position: relative;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+.modal h2 {
+  text-align: center;
+  padding: 70px;
+}
+.modal button {
+  cursor: pointer;
+}
+.modal img {
+  position: absolute;
+  right: 15px;
+  top: 5px;
+}
+
+.hidden {
+  display: none;
+}/*# sourceMappingURL=modal.css.map */
